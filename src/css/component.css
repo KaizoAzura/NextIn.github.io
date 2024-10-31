@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.heading-text {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 1rem;
+  color: darkgray;
+  font-weight: 300;
+}
+
+@media (min-width: 992px) {
+  .heading-text {
+    font-size: 4rem;
+  }
+}
+.btn {
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+.btn:hover i {
+  transform: translateX(25%);
+  transition: 0.3s ease-in-out;
+}
+.btn i {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+.btn.btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+.btn.btn-primary i {
+  background-color: #000000;
+  color: #ffffff;
+}
+.btn.btn-primary:focus {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #000000;
+}/*# sourceMappingURL=component.css.map */

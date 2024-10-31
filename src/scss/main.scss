@@ -1,0 +1,126 @@
+@import "reset";
+@import "component";
+
+// navbar
+
+.navbar {
+  .navbar-brand {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler {
+    font-size: 1.75rem;
+    color: #ffffff;
+    border: 0;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border: 0;
+    }
+  }
+
+  //   offcanvas navbar
+
+  .offcanvas {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5rem;
+    box-shadow: -25px 0 50px 0 #060606;
+    .offcanvas-header {
+      padding: 0.5rem;
+      h5 {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      button {
+        color: #ffffff;
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        outline: none;
+      }
+    }
+
+    .offcanvas-body {
+      border: 1px solid #ffffff;
+      border-radius: 0.5rem;
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 300;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 0;
+              height: 1px;
+              background-color: #ffffff;
+              transition: width 0.3s ease;
+            }
+            &:hover::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// hero section
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #000000, #00000078),
+    url(../../img/hero-img/bg.webp);
+  background-size: 200%;
+  background-position: 15% 0;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+// breakpoint
+
+@include respond-to(sm) {
+  .navbar {
+    .offcanvas {
+      box-shadow: none;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .hero {
+    background-size: 150%;
+  }
+}
+
+@include respond-to(lg) {
+  .navbar {
+    .offcanvas {
+      .offcanvas-body {
+        border: 0;
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              font-size: 1rem;
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

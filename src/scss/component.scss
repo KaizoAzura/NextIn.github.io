@@ -1,0 +1,47 @@
+@import "reset";
+
+// style
+
+.btn {
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    i {
+      transform: translateX(25%);
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  i {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  &.btn-primary {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ffffff;
+
+    i {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+      border: 1px solid #ffffff;
+      color: #000000;
+    }
+  }
+}
