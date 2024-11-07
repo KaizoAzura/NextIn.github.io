@@ -60,21 +60,260 @@
             </button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#productAccordion"
+                  aria-expanded="false"
+                  aria-controls="productAccordion"
+                >
+                  Product <i class="ri-arrow-down-s-fill"></i>
+                </a>
+                <div
+                  id="productAccordion"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                >
+                  <ul class="navbar-nav">
+                    <!-- Robotics Category -->
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#roboticsAccordion"
+                        aria-expanded="false"
+                        aria-controls="roboticsAccordion"
+                      >
+                        Robotics <i class="ri-expand-up-down-fill"></i>
+                      </a>
+                      <div
+                        id="roboticsAccordion"
+                        class="collapse"
+                        aria-labelledby="headingRobotics"
+                        data-bs-parent="#productAccordion"
+                      >
+                        <ul class="navbar-nav category">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >IronMan <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Detroit <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Ultron <i class="ri-link"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- AI Category -->
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#aiAccordion"
+                        aria-expanded="false"
+                        aria-controls="aiAccordion"
+                      >
+                        Artificial Intelligence
+                        <i class="ri-expand-up-down-fill"></i>
+                      </a>
+                      <div
+                        id="aiAccordion"
+                        class="collapse"
+                        aria-labelledby="headingAI"
+                        data-bs-parent="#productAccordion"
+                      >
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >ChatGPT <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >BlackBox AI <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Dall E <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Sora AI <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Dorothy <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >B.A.R.F. <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >JARVIS <i class="ri-link"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- Energy Category -->
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#creativeToolsAccordion"
+                        aria-expanded="false"
+                        aria-controls="creativeToolsAccordion"
+                      >
+                        Energy <i class="ri-expand-up-down-fill"></i>
+                      </a>
+                      <div
+                        id="creativeToolsAccordion"
+                        class="collapse"
+                        aria-labelledby="headingCreativeTools"
+                        data-bs-parent="#productAccordion"
+                      >
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Arc Reactor <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Vibranium <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Anulax <i class="ri-link"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <!-- Chip Category -->
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#chips"
+                        aria-expanded="false"
+                        aria-controls="chips"
+                      >
+                        Chips Computer <i class="ri-expand-up-down-fill"></i>
+                      </a>
+                      <div
+                        id="chips"
+                        class="collapse"
+                        aria-labelledby="headingCreativeTools"
+                        data-bs-parent="#productAccordion"
+                      >
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Stark Chips <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Bionic Chips <i class="ri-link"></i
+                            ></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"
+                              >Mind Control Chips <i class="ri-link"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </li>
+
+              <!-- Research -->
               <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#researchAccordion"
+                  aria-expanded="false"
+                  aria-controls="researchAccordion"
+                >
+                  Research <i class="ri-arrow-down-s-fill"></i>
+                </a>
+                <div
+                  id="researchAccordion"
+                  class="collapse"
+                  aria-labelledby="headingOne"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Research Topic 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Research Topic 2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Research Topic 3</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
+
+              <!-- Company -->
               <li class="nav-item">
-                <a class="nav-link" href="#">Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Career</a>
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#companyAccordion"
+                  aria-expanded="false"
+                  aria-controls="companyAccordion"
+                >
+                  Company <i class="ri-arrow-down-s-fill"></i>
+                </a>
+                <div
+                  id="companyAccordion"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                >
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Careers</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
@@ -103,6 +342,89 @@
       </div>
     </section>
     <!-- end hero section -->
+
+    <!-- companies -->
+    <section class="companies">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="line-text">Trusted by Leading Innovators</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 col-lg-2 my-2 text-center py-3">
+            <img
+              src="img/companies/google.png"
+              class="mx-auto logo-companies"
+              alt="google"
+            />
+          </div>
+          <div class="col-4 col-lg-2 my-2 text-center py-3">
+            <img
+              src="img/companies/apple.png"
+              class="mx-auto logo-companies"
+              alt="apple"
+            />
+          </div>
+          <div class="col-4 col-lg-2 my-2 text-center py-3">
+            <img
+              src="img/companies/microsoft.png"
+              class="mx-auto logo-companies"
+              alt="microsoft"
+            />
+          </div>
+          <div class="col-4 col-lg-2 my-2 text-center py-3">
+            <img
+              src="img/companies/amazon.png"
+              class="mx-auto logo-companies"
+              alt="amazon"
+            />
+          </div>
+          <div class="col-4 col-lg-2 my-2 text-center py-3">
+            <img
+              src="img/companies/tesla.png"
+              class="mx-auto logo-companies"
+              alt="tesla"
+            />
+          </div>
+          <div class="col-4 col-lg-2 my-2 text-center py-3">
+            <img
+              src="img/companies/adobe.png"
+              class="mx-auto logo-companies"
+              alt="adobe"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end companies -->
+
+    <!-- Join and Learn Section -->
+    <section class="learn">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="heading-text">Join the Leading Tech Innovator</h2>
+            <p class="text">
+              Be part of an innovative community. Learn from the best and
+              transform your journey with NextIn’s cutting-edge technologies.
+            </p>
+            <a href="#join-now" class="btn btn-primary mt-4"
+              >Join Now <i class="ri-arrow-right-line"></i
+            ></a>
+          </div>
+          <!-- img -->
+          <div class="col-md-6 mt-4 mt-md-0">
+            <img
+              src="img/learn/learn-img.png"
+              alt="learn image"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Join and Learn Section -->
 
     <!-- script bootstrap -->
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
